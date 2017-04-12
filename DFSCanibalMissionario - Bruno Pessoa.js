@@ -9,8 +9,7 @@ function getNode(state, parent) {
     return {state: state, parent: parent, children, addChild, removeChild};
 }
 
-createChildNodes = (parent) => {
-    let validAction = false;
+createChildNodes = (parent) => {    
     let states = [];
     let state  = parent.state;
     let mis, misAux = !state.side ? state.l.m : state.r.m;
